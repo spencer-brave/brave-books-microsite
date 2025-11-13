@@ -1,0 +1,61 @@
+.product__carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.product__carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.product__carousel-image-container {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product__carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius);
+  aspect-ratio: 1/1;
+}
+
+.product__carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #222;
+  padding: 0 0.5rem;
+}
+
+.product__carousel-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.product__carousel-thumbnail {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product__carousel-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.product__carousel-thumbnail.active {
+  border: 2px solid grey;
+}

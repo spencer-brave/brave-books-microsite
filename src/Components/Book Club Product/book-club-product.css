@@ -1,0 +1,167 @@
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.reviews-container a {
+  color: black;
+}
+.fibc-product__section-header h2 {
+  margin-bottom: 10px;
+}
+.fibc-line-through-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: grey;
+  margin: 0;
+}
+.free-shipping-badge {
+  width: fit-content;
+  background: rgb(19, 77, 119);
+  padding: 7px 20px;
+}
+.free-shipping-badge p {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-family: degular, arial;
+}
+.fibc-add-to-cart__container span {
+  display: block;
+  text-align: center;
+  max-width: 450px;
+  margin-top: 10px;
+}
+.fibc-product__option-title .fibc-product__best-value {
+  background-color: var(--main-red);
+  color: white;
+  padding: 5px;
+  display: block;
+  line-height: 15px;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+.fibc-product__information h3 {
+  font-size: clamp(22px, 3vw, 28px);
+  margin-top: 15px;
+}
+
+.fibc-product__information-container {
+  max-width: 455px;
+}
+.fibc-product__information {
+  width: fit-content;
+  margin: auto;
+}
+.fibc-product__select-plan {
+  position: relative;
+  margin-top: 10px;
+}
+.fibc-product__plans {
+  display: grid;
+  row-gap: 15px;
+}
+.fibc-product__select-plan p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--font-header);
+  color: var(--main-navy-blue);
+}
+.fibc-product__plan-block {
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 10px;
+}
+.fibc-product__plan-block span {
+  font-size: 12px;
+}
+.fibc-product__percent-off {
+  padding: 2px 5px;
+  background-color: var(--color-red);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  top: -3px;
+}
+.fibc-product__radio-button {
+  width: fit-content;
+  height: 25px;
+}
+.fibc-product__price-container {
+  text-align: right;
+  height: fit-content;
+  margin: auto;
+}
+.fibc-product__atc-disclaimer {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 10px;
+}
+.fibc-product__radio-button input[type="radio"] {
+  cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: black;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+@media screen and (max-width: 696px) {
+  .fibc-product__information-container {
+    margin-top: 25px;
+  }
+}
+
+.fibc-product__container {
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.fibc-product__container.fibc-product__info-open {
+  border: 3px solid black;
+}
+
+.fibc-product__information .primary-button {
+  max-width: 450px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+input[type="radio"]::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: auto auto;
+  border-radius: 100%;
+  transform: scale(0);
+  transition: 0.12s transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-navy-blue);
+  top: 4px;
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+.fibc-product__book-covers .fibcFreeBanner {
+  position: absolute;
+  background-color: #d13928;
+  border-radius: 25px;
+  padding: 1px 8px;
+  color: white !important;
+  font-size: 14px !important;
+  left: -10px;
+  top: -13px;
+}
+/* END PRODUCT SECTION V2 */

@@ -1,0 +1,19 @@
+.section img {
+  width: 100%;
+  height: unset;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 696px) {
+  .section h1,
+  .section h2 {
+    text-align: center;
+  }
+  .section a {
+    margin: auto;
+  }
+  .htmlContent {
+    order: 1!important;
+  }
+}

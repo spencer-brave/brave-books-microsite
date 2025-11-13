@@ -1,0 +1,123 @@
+{
+  "slug": "lp1-kirk-s3b9",
+  "sections": [
+    {
+      "type": "Header",
+      "props": {
+        "cta": "Get your free book today",
+        "bgColor": "var(--color-light-blue)",
+        "altText": "Black lion logo for BRAVE Books"
+      }
+    },
+    {
+      "type": "HeroImgWText",
+      "props": {
+        "bgColor": "#ededed",
+        "image": "",
+        "altText": "Kirk Cameron showing off his children's book titled The Fox, the Fair, and the Invention Scare",
+        "contentLayout": "grid-layout__center",
+        "order": "0",
+        "htmlContent": "<h1 class='heading-lg'>Kirk Cameron is giving you his book and more for Free</h1><p>For a limited time only, you'll receive all of these items completely free with your subscription:</p><ul class='list-with-checks'> <li><span>Kirk Cameron's <em>The Fox, the Fair, and the Invention Scare</em> <strong style='-webkit-text-decorations-in-effect: line-through; text-decoration: line-through;'>($22.99)</strong></span></li> <li><span>Access to BRAVE+ streaming platform <strong style='-webkit-text-decorations-in-effect: line-through; text-decoration: line-through;'>($6.99/month)</strong></span></li> <li><span>A map of Freedom Island and stickers to place on it <strong style='-webkit-text-decorations-in-effect: line-through; text-decoration: line-through;'>($5.99)</strong></span></li> <li><span>Digital resources <strong style='-webkit-text-decorations-in-effect: line-through; text-decoration: line-through;'>($5.99)</strong></span></li> <li><span>Free shipping for the life of your subscription <strong style='-webkit-text-decorations-in-effect: line-through; text-decoration: line-through;'>($4.99/month)</strong></span></li> </ul><p>That's over $45 worth of value!</p><a href='#fibc-product-section' class='primary-btn'>Get your free bundle</a>",
+        "customCSS": ".container {padding-top:50px;}"
+      }
+    },
+    {
+      "type": "TrustedBanner"
+    },
+    {
+      "type": "ImageWText",
+      "props": {
+        "bgColor": "var(--color-light-blue)",
+        "image": "https://bravebooks.us/cdn/shop/files/Kirk_smiling_and_pointing_at_book.webp?v=1698077246&width=950",
+        "altText": "Kirk Cameron showing off his children's book titled The Fox, the Fair, and the Invention Scare",
+        "contentLayout": "grid-layout__left",
+        "order": "1",
+        "customCSS": "img{box-shadow:unset;}",
+        "htmlContent": "<h2 class='heading-md'>Why the BRAVE Book Club?</h2><p>Morality is ingrained by the age of 10.</p><p><strong>Here's the bad news</strong><br>So much of today’s world was designed to break apart and weaken the family. Most families do not have a plan to fight this disconnect and it shows.</p><p>Disconnected families lead to children who grow up unsure of what voices to listen to, confused about cultural ideas, and more likely to abandon the values you hold dear.</p><p>Here are some symptoms of a disconnected family:</p><ul class='list-with-checks list-with-xs'><li>Lack of intentionality around family time</li><li>Consumption of media that opposes godly values</li><li>Time spent apart or in front of screens</li><li>Children looking to outside sources for moral values</li><li>A shortage of discussions about what your family believes</li></ul><p><strong>Here's the good news</strong><br>Strong kids come from strong families who have a plan to transfer values and character down from one generation to the next. By investing in your kids' hearts and minds through healthy family habits with the BRAVE Book Club, you can help them grow into strong, resilient kids and build an indestructible family unit.</p><a href='#fibc-product-section' class='primary-btn'>Equip your kids today</a>"
+      }
+    },
+    {
+      "type": "IconsWText",
+      "props": {
+        "bgColor": "var(--color-light-blue)",
+        "header": "How It Works",
+        "btnText": "",
+        "btnLink": ""
+      },
+      "blocks": [
+        {
+          "image": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/BRAVE_Icon_1.webp?v=1761682115",
+          "title": "A new book every month",
+          "body": "We take the struggle out of finding high-quality and wholesome content by making a new book every month and shipping it straight to your door!"
+        },
+        {
+          "image": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/BRAVE_Icon_2.webp?v=1761682091",
+          "title": "Games and Activities",
+          "body": "Each book includes interactive stories, games, and discussion questions that bring the whole family together."
+        },
+        {
+          "image": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/BRAVE_Icon_3.webp?v=1761682127",
+          "title": "Instilling Moral Values",
+          "body": "Every month, a trusted author and our creative team craft a unique BRAVE book to teach a different biblical, wholesome, message."
+        }
+      ]
+    },
+    {
+      "type": "BookClubProduct",
+      "props": {
+        "bgColor": "#ededed",
+        "freeBookId": "45781171896578",
+        "bonusProductId": "43849953837314",
+        "orderTag": "lp1-kirk-s3b9"
+      }
+    },
+    {
+      "type": "ImageWText",
+      "props": {
+        "bgColor": "var(--color-light-blue)",
+        "image": "https://bravebooks.us/cdn/shop/files/charlott-with-unmuzzle-me.jpg?v=1695130833",
+        "altText": "A little girl holding a BRAVE book titled Unmuzzle Me",
+        "contentLayout": "grid-layout__center",
+        "order": "0",
+        "htmlContent": "<h3 class='heading-sm'>Stories that children love that develop character</h3><p>Every BRAVE Book immerses children in Freedom Island, a world full of fun and engaging stories, as each book is a part of a larger story that connects each book in an overarching narrative demonstrated in the interactive map and character stickers. The BRAVE Book Club is like hiding veggies in your child's diet... except these are the kinds of veggies your children will be asking for every day!</p>",
+        "customCSS": "img{max-width:300px;margin:auto;} .container{padding-bottom:25px;}"
+      }
+    },
+    {
+      "type": "ImageWText",
+      "props": {
+        "bgColor": "var(--color-light-blue)",
+        "image": "https://bravebooks.us/cdn/shop/files/bethany-with-charlotte.jpg?v=1695131060",
+        "altText": "A little girl with her mother reading a BRAVE book titled Parrots Go Bananas",
+        "contentLayout": "grid-layout__center",
+        "order": "1",
+        "htmlContent": "<h3 class='heading-sm'>Resources that parents trust to withstand culture</h3><p>Enjoy the resources from BRAVE without worry. BRAVE stands firm in the conviction that strong families are rooted in Biblical foundations. The content in all BRAVE books and resources are based upon faith-based morality that teaches values such as the sanctity of life, using discernment, and practicing humility. Root your families in the Biblical values that make families strong. BRAVE is committed to being a resource that families can trust to inform parents, equip kids, strengthen family bonds, and point families to the Bible as their source of Truth!</p>",
+        "customCSS": "img{max-width:300px;margin:auto;} .container{padding-top:25px;padding-bottom:25px;}"
+      }
+    },
+    {
+      "type": "ImageWText",
+      "props": {
+        "bgColor": "var(--color-light-blue)",
+        "image": "https://bravebooks.us/cdn/shop/files/trent-and-family-reading.jpg?v=1695131276",
+        "altText": "A family reading a BRAVE book together titled The Treasure of Cabal Island",
+        "contentLayout": "grid-layout__center",
+        "order": "0",
+        "htmlContent": "<h3 class='heading-sm'>Activities that reinforce traditional family values</h3><p>Cultivate healthy family habits with each month's BRAVE delivery of a BRAVE story, games and discussion questions that get the family talking and playing together. Each book and activity focuses on a traditional value like honesty, integrity, and perseverance that develops character in kid-friendly ways. BRAVE activities build trust between parents and children and other siblings through team building and quality time.</p>",
+        "customCSS": "img{max-width:300px;margin:auto;} .container{padding-top:25px;padding-bottom:25px;}"
+      }
+    },
+    {
+      "type": "ImageWText",
+      "props": {
+        "bgColor": "#ededed",
+        "image": "https://bravebooks.us/cdn/shop/files/BB_M_BFLP1Lan_S6_1.png?v=1694617443",
+        "altText": "Trent Talbot, founder of BRAVE Books",
+        "contentLayout": "grid-layout__right",
+        "order": "0",
+        "htmlContent": "<h2 class='heading-md'>One Dad's Mission to Save Children's Literature</h2><p>As a new dad, I searched for wholesome books for my family, but the content in so many of today’s children’s books shook me to my core. So, I decided to quit my career in ophthalmology to start BRAVE Books–a publishing company that celebrates strong families and honors traditional American values.</p><br><p>At BRAVE Books, we believe in the power of the family unit to shape the next generation. BRAVE is not just a company for families, but a company of families. Our employees use this family plan to strengthen and build up their own families. We are excited to offer this plan to your family. Together, we can change the course of the next generation.</p>",
+        "customCSS": "img{box-shadow:unset;}"
+      }
+    }
+  ]
+}

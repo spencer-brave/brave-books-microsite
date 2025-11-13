@@ -1,0 +1,26 @@
+.container {
+  max-width: var(--page-width);
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: auto;
+}
+
+.container a {
+  font-size: 14px;
+}
+
+.container img {
+  width: 150px;
+  height: unset;
+  max-height: unset;
+  float: left;
+}
+
+@media screen and (max-width: 696px) {
+  .container img {
+    width: 100px;
+  }
+}

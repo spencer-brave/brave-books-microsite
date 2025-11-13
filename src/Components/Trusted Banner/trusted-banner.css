@@ -1,0 +1,40 @@
+#braveTrustedSection {
+  background-color: var(--color-light-navy);
+  padding: var(--space-md);
+}
+#braveTrustedContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  max-width: fit-content;
+  margin: auto;
+  text-decoration: none;
+}
+#braveTrustedContainer h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+#braveTrustedStat {
+  display: none;
+}
+#braveTrustedUgc {
+  display: none;
+}
+#braveTrustedContainer img {
+  height: 25px;
+  width: unset;
+}
+#braveTrustedButton {
+  font-size: 15px;
+  box-shadow: none;
+  background-color: #fff0;
+  text-decoration: underline;
+  padding: 8px 0;
+}
+#braveTrustedButton:hover {
+  color: #dbdbdb;
+}
