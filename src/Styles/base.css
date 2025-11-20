@@ -23,9 +23,15 @@ ul {
   text-align: center;
 }
 
-.heading-lg {
+.heading-xl {
   font-size: clamp(1.875rem, 4vw, 3.4rem);
   line-height: clamp(2.1rem, 4vw, 3.7rem);
+  margin-bottom: clamp(var(--space-sm), 2vw, var(--space-md));
+}
+
+.heading-lg {
+  font-size: clamp(1.625rem, 4.5vw, 2.75rem);
+  line-height: clamp(1.9rem, 4.5vw, 3.1rem);
   margin-bottom: clamp(var(--space-sm), 2vw, var(--space-md));
 }
 

@@ -1,4 +1,5 @@
 import styles from "./image-with-text.module.css";
+import SectionStyles from "../../Components/section-styles";
 
 export default function ImageWText(settings) {
   return (
@@ -7,13 +8,7 @@ export default function ImageWText(settings) {
       className={styles.section}
       style={{ backgroundColor: settings.props.bgColor }}
     >
-      {settings.props.customCSS && (
-      <style>{`
-          #image-w-text-${settings.id} {
-            ${settings.props.customCSS}
-          }
-        `}</style>
-      )}
+      <SectionStyles id={settings.id} props={settings.props} />
       <div className="container">
         <div className={settings.props.contentLayout}>
           <div
@@ -21,17 +16,19 @@ export default function ImageWText(settings) {
             className={styles.htmlContent}
             dangerouslySetInnerHTML={{ __html: settings.props.htmlContent }}
           />
-          <div>
-            <img
-              loading={settings.id > 1 ? 'lazy' : 'eager'}
-              fetchPriority={settings.id > 1 ? 'low' : 'high'}
-              decoding="async"
-              src={settings.props.image}
-              alt={settings.props.altText}
-              width="400"
-              height="400"
-            />
-          </div>
+          {settings.props.image && (
+            <div>
+              <img
+                loading={settings.id > 1 ? "lazy" : "eager"}
+                fetchPriority={settings.id > 1 ? "low" : "high"}
+                decoding="async"
+                src={settings.props.image}
+                alt={settings.props.altText}
+                width="400"
+                height="400"
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
