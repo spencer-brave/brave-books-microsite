@@ -11,8 +11,8 @@ function TemplateRouter() {
   useEffect(() => {
     setPage(null);
     setError(false);
-
-    fetch(`https://brave-books-back-end.onrender.com/api/pages/${slug}`)
+    console.log(process.env.REACT_APP_BRAVE_BACKEND_URL);
+    fetch(`${process.env.REACT_APP_BRAVE_BACKEND_URL}/pages/${slug}`)
       .then((res) => {
         if (!res.ok) throw new Error("Not found");
         return res.json();

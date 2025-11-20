@@ -47,7 +47,7 @@ export default function BookClubProduct(settings) {
 
     try {
       const response = await fetch(
-        "https://brave-books-back-end.onrender.com/api/create-cart",
+        `${process.env.BRAVE_BACKEND_URL}/create-cart`,
         {
           method: "POST",
           headers: {
