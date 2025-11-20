@@ -1,0 +1,48 @@
+{
+  "slug": "prageru-parent-action-guide",
+  "sections": [
+    {
+      "type": "Header",
+      "props": {
+        "logo": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/prageru-logo.webp?v=1762277017",
+        "cta": "",
+        "bgColor": "#fff",
+        "altText": "PragerU transparent background logo"
+      }
+    },
+    {
+      "type": "EmailCollection",
+      "props": {
+        "bgColor": "var(--color-blue)",
+        "image": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/parent-action-guide.webp?v=1763494614",
+        "altText": "Parent Action Guide document with orange text on a white background",
+        "contentLayout": "grid-layout__center",
+        "order": "1",
+        "sheetName": "Parent Action Guide",
+        "afterSubmit": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/PREP_2022ParentActionGuide_FINAL__1.pdf?v=1763498573",
+        "customCSS": "img{box-shadow:unset;}",
+        "htmlContent": "<h1 class='heading-lg'>Concerned With What Your Kids Are Learning In School?</h1><p>You should feel confident about what your children are learning from their teachers. But, unfortunately, many classrooms have become training grounds for activism instead of places of learning.</p><p>Enter your email below to receive a free Parent Action Guide that will give you the tools you need to advocate for your children.</p>"
+      }
+    },
+    {
+      "type": "Banner",
+      "props": {
+        "bgColor": "var(--color-navy-blue)",
+        "htmlContent": "<h2 class='heading-sm'>Join hundreds of other parents who are taking a stand for their children.</h2>",
+        "customCSS": "h2{color:white; text-align:center; margin-bottom:0;}"
+      }
+    },
+    {
+      "type": "ImageWText",
+      "props": {
+        "bgColor": "white",
+        "image": "https://cdn.shopify.com/s/files/1/0564/9032/8257/files/Parent_Action_Guide_Graphic.webp?v=1763495675",
+        "altText": "Collection of educational materials including a parent action guide and a school bus illustration on a white background.",
+        "contentLayout": "grid-layout__center",
+        "order": "1",
+        "customCSS": "img{box-shadow:unset;}",
+        "htmlContent": "<h2 class='heading-md'>Feel Confident in What Your Kids Are Learning</h2><p>The Parent Action Guide is designed to assist you with:</p><ul class='list-with-checks'><li>How to use the Freedom of Information Act (FOIA) to request access to curriculum and materials used in your student’s classroom</li><li>How to escalate your concerns and to whom</li><li>How to opt your child out of certain subjects and classroom activities</li><li>Other tips, tools, and templates to contact educational leaders and successfully advocate for your child</li></ul>"
+      }
+    }
+  ]
+}

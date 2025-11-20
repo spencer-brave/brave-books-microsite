@@ -1,0 +1,106 @@
+.email-collection__section img {
+  width: 100%;
+  height: unset;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.email-form__container[data-form-status="loading"] .email-form__spinner {
+  display: block;
+}
+.email-form__container[data-form-status="loading"] .email-form__arrow {
+  display: none;
+}
+.email-form__container[data-form-status="success"] .email-form__claim {
+  display: block;
+}
+.email-form__container[data-form-status="error"] .email-form__email-error {
+  display: block;
+}
+.prageru-email-content {
+  display: flex;
+  flex-direction: column;
+}
+.email-form__container form {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  background-color: #e8e8e8;
+  border-radius: 25px;
+  display: flex;
+  height: 50px;
+  transition: 0.1s scale;
+}
+.email-form__container form:focus-within {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #2d73ff;
+  scale: 103%;
+}
+.email-form__container input {
+  width: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+}
+.email-form__container input:autofill {
+  border-radius: 25px;
+}
+.email-form__container button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.email-form__container button:active {
+  scale: 99%;
+}
+.email-form__container button svg {
+  height: 100%;
+  width: 100%;
+}
+.email-form__container button span {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  height: 75%;
+  background-color: var(--color-red);
+  border-radius: 25px;
+  padding: 0 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.email-form__container button span:hover {
+  background-color: var(--color-red-hover);
+}
+.email-form__spinner {
+  display: none;
+  width: 50px;
+  height: 100%;
+}
+.email-form__claim,
+.email-form__email-error {
+  display: none;
+  max-width: 350px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.email-form__email-error p {
+  color: var(--color-red);
+  font-size: 14px;
+}
+@media screen and (max-width: 696px) {
+  .email-form__container form,
+  .email-form__claim {
+    margin: 20px auto 0;
+  }
+  .email-collection__section h1,
+  .email-collection__section p {
+    text-align: center;
+  }
+  .email-collection__section a {
+    margin: auto;
+  }
+}

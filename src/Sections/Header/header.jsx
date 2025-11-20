@@ -7,8 +7,10 @@ export default function Header(settings) {
       <div className={styles.container}>
         <div>
           <img
-            src={Logo}
-            srcSet={`
+            src={settings.props.logo ? settings.props.logo : Logo}
+            srcSet={settings.props.logo
+              ? `${settings.props.logo}?width=100 100w, ${settings.props.logo}?width=200 200w, ${settings.props.logo}?width=400 400w`
+              : `
               ${Logo}?width=100 100w,
               ${Logo}?width=200 200w,
               ${Logo}?width=400 400w
@@ -17,11 +19,13 @@ export default function Header(settings) {
             alt={settings.props.altText}
           />
         </div>
-        <div>
-          <a href="#fibc-product-section" className="primary-btn">
-            {settings.props.cta}
-          </a>
-        </div>
+        {settings.props.cta && (
+          <div>
+            <a href="#fibc-product-section" className="primary-btn">
+              {settings.props.cta}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,18 +1,39 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import PageRenderer from "./Pages/page-renderer";
-import LP1KirkS3B9 from "./Pages/lp1-kirk-s3b9.json";
-
-const pageMap = {
-  "lp1-kirk-s3b9": LP1KirkS3B9
-};
+import { Helmet } from "react-helmet";
+import PageRenderer from "./page-renderer";
 
 function TemplateRouter() {
   const { slug } = useParams();
-  const data = pageMap[slug];
+  const [page, setPage] = useState(null);
+  const [error, setError] = useState(false);
 
-  if (!data) return <p>404 - Page not found</p>;
+  useEffect(() => {
+    setPage(null);
+    setError(false);
 
-  return <PageRenderer sections={data.sections} />;
+    fetch(`https://brave-books-back-end.onrender.com/api/pages/${slug}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Not found");
+        return res.json();
+      })
+      .then((json) => setPage(json))
+      .catch(() => setError(true));
+  }, [slug]);
+
+  if (error) return <p>404 - Page not found</p>;
+  if (!page) return null;
+
+  return (
+    <>
+      <Helmet>
+        <title>{page.title} | BRAVE Books</title>
+      </Helmet>
+
+      <PageRenderer sections={page.sections} />
+    </>
+  );
 }
 
 export default TemplateRouter;
+
