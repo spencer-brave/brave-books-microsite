@@ -156,6 +156,10 @@ img {
 }
 
 @media screen and (max-width: 696px) {
+  p {
+    text-align: center;
+  }
+
   /* Layout */
   .grid-layout__center,
   .grid-layout__left,

@@ -1,4 +1,4 @@
-export default function SectionStyles({ id, props }) {
+export default function SectionStyles({ id, sectionId, props }) {
   const {
     customCSS,
     bgImage,
@@ -10,7 +10,7 @@ export default function SectionStyles({ id, props }) {
   } = props;
 
   const styles = `
-    #image-w-text-${id} {
+    #${sectionId} {
       ${customCSS || ""}
       background: url(${bgImage || "unset"});
       background-size: cover;
@@ -19,11 +19,11 @@ export default function SectionStyles({ id, props }) {
     }
 
     @media screen and (max-width: 696px) {
-      #image-w-text-${id} {
+      #${sectionId} {
         background: url(${bgImageMobile || "unset"});
         background-size: cover;
         background-position: ${bgPositionMobile || "center"};
-      height: ${sectionHeightMobile || "auto"};
+        height: ${sectionHeightMobile || "auto"};
       }
     }
   `;

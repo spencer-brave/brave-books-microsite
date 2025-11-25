@@ -1,0 +1,46 @@
+.sliderWrapper {
+  display: flex;
+  align-items: start;
+  margin-top: 25px;
+  position: relative;
+}
+
+.prevButton,
+.nextButton {
+  background: none;
+  border: none;
+  font-size: 32px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.reviewBlock {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviewContent {
+  padding: 53px 20px 20px;
+  background-color: white;
+  border-radius: var(--radius);
+  margin-top: -64px;
+  box-shadow: 0 0 20px #cacaca;
+}
+
+.reviewImage {
+  width: 75%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.reviewCopy {
+  margin-bottom: 10px;
+}
+
+.stars span {
+  font-size: 20px;
+  color: gold;
+}

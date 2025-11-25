@@ -1,0 +1,73 @@
+.sliderHeading {
+  padding: 25px;
+}
+.sliderHeading h2 {
+  color: white;
+}
+.sliderContainer {
+  display: flex;
+  height: 450px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  gap: var(--space-sm);
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 40px;
+  scroll-padding-right: 40px;
+}
+.slide {
+  background: black;
+  min-width: 300px;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  margin-left: 10px;
+}
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  object-fit: cover;
+  object-position: center top;
+}
+.text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+}
+.text h3 {
+  color: white;
+  margin-top: 15px;
+  margin-left: 15px;
+  z-index: 1;
+}
+.description {
+  padding: var(--space-sm);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+}
+.description p {
+  color: white;
+}
+.scrollBtns {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 25px;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.scrollBtns button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
