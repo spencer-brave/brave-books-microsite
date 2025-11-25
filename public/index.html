@@ -97,7 +97,7 @@
       }
     </style>
 
-    <!-- Meta Pixel -->
+    <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -108,11 +108,11 @@
         };
         if (!f._fbq) f._fbq = n;
         n.push = n;
-        n.loaded = true;
+        n.loaded = !0;
         n.version = "2.0";
         n.queue = [];
         t = b.createElement(e);
-        t.async = true;
+        t.async = !0;
         t.src = v;
         s = b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t, s);
@@ -122,11 +122,18 @@
         "script",
         "https://connect.facebook.net/en_US/fbevents.js"
       );
-    </script>
-    <script>
-      fbq("init", "217804503553867");
+      fbq("init", "1222260603053314");
       fbq("track", "PageView");
     </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1222260603053314&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <!-- Google tag (gtag.js) -->
     <script
       async
