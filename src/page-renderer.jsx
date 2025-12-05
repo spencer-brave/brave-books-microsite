@@ -2,6 +2,7 @@ import AsSeenOn from "./Sections/As Seen On/as-seen-on.jsx";
 import Banner from "./Sections/Banner/banner.jsx";
 import BookClubProduct from "./Sections/Book Club Product/book-club-product.jsx";
 import EmailCollection from "./Sections/Email Collection/email-collection.jsx";
+import EmailModal from "./Sections/Email Modal/email-modal.jsx";
 import FixedButton from "./Sections/Fixed Button/fixed-button.jsx";
 import Header from "./Sections/Header/header.jsx";
 import HeroImgWText from "./Sections/Hero Image w Text/hero-img-w-text.jsx";
@@ -17,6 +18,7 @@ const components = {
   Banner,
   BookClubProduct,
   EmailCollection,
+  EmailModal,
   FixedButton,
   Header,
   HeroImgWText,

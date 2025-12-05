@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 480px;
+  width: 95%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.modal img {
+  width: 100%;
+  height: unset;
+  margin-bottom: 20px;
+}
+
+.innerContent {
+  padding: var(--space-md)
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  gap: 4px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.submitButton {
+  padding: 12px 18px;
+  background: var(--color-red);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.continueLink {
+  display: block;
+  margin-top: var(--space-sm);
+  color: #777;
+  text-decoration: underline;
+  font-size: 15px;
+}
