@@ -25,10 +25,10 @@ export default function EmailCaptureModal() {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:4000/api/klaviyo/subscribe", {
+      const res = await fetch(`${process.env.BRAVE_BACKEND_URL}/klaviyo/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email: email, listId: "WgVN8L" }),
       });
 
       if (!res.ok) {
@@ -61,8 +61,9 @@ export default function EmailCaptureModal() {
                 Claim 15% Off Before You Join
               </h2>
               <p className={`text-center ${styles.subtitle}`}>
-                Enter your email to receive 15% off of your first order and get
-                other exclusive offers and updates.
+                Enter your email to receive 15% off your first order and
+                subscribe to our email updates with news, promotions, and
+                special offers.
               </p>
               <form onSubmit={handleSubmit} className={styles.form}>
                 <input
