@@ -55,7 +55,7 @@
 }
 
 .submitButton {
-  padding: 12px 18px;
+  padding: 12px 5px;
   background: var(--color-red);
   color: white;
   border: none;

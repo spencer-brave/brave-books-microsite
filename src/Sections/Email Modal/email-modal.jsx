@@ -80,7 +80,7 @@ export default function EmailCaptureModal() {
                   className={styles.submitButton}
                   disabled={loading}
                 >
-                  {loading ? "Loading..." : "Subscribe"}
+                  {loading ? "Loading..." : "Claim Your Discount"}
                 </button>
               </form>
 
