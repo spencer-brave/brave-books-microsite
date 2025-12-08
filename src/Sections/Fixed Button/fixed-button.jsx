@@ -26,7 +26,7 @@ export default function FixedButton(settings) {
       />
 
       <div className={styles.inner}>
-        <a href={settings.props.buttonLink} className="primary-btn">
+        <a {...(settings.props.emailModal ? { "data-email-modal": true } : {})} href={settings.props.buttonLink} className="primary-btn">
           {settings.props.buttonText}
         </a>
       </div>
