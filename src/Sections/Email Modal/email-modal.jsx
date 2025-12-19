@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./email-modal.module.css";
 
-export default function EmailCaptureModal() {
+export default function EmailCaptureModal(settings) {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,7 +28,7 @@ export default function EmailCaptureModal() {
       const res = await fetch(`${process.env.REACT_APP_BRAVE_BACKEND_URL}/klaviyo/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email, listId: "WgVN8L" }),
+        body: JSON.stringify({ email: email, listId: settings.props.listId }),
       });
 
       if (!res.ok) {

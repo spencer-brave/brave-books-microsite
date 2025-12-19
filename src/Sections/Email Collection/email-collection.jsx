@@ -15,6 +15,7 @@ const zapIds = {
   "Parent Action Guide": "usibo9e",
   "US Presidents": "2376cg8",
   "Coloring book": "2376yjk",
+  "Civics": "ua8aa2l",
   "Constitution Crosswalk": "utujj12",
   "Woke Education": "2fbbfa6",
   Trailblazers: "2pwf883",

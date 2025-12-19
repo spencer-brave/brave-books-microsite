@@ -53,6 +53,15 @@
   border: 1px solid #ccc;
   border-radius: 6px;
 }
+.innerContent small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.innerContent small a {
+  color: unset;
+}
 
 .submitButton {
   padding: 12px 5px;

@@ -47,7 +47,7 @@ export default function BookClubProduct(settings) {
 
     try {
       const response = await fetch(
-        `${process.env.BRAVE_BACKEND_URL}/create-cart`,
+        `${process.env.REACT_APP_BRAVE_BACKEND_URL}/create-cart`,
         {
           method: "POST",
           headers: {
