@@ -1,4 +1,5 @@
 import styles from "./email-collection.css";
+import SectionStyles from "../../Components/section-styles";
 
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("keydown", function (event) {
@@ -15,7 +16,7 @@ const zapIds = {
   "Parent Action Guide": "usibo9e",
   "US Presidents": "2376cg8",
   "Coloring book": "2376yjk",
-  "Civics": "ua8aa2l",
+  Civics: "ua8aa2l",
   "Constitution Crosswalk": "utujj12",
   "Woke Education": "2fbbfa6",
   Trailblazers: "2pwf883",
@@ -94,16 +95,13 @@ export default function EmailCollection(settings) {
       className={`email-collection__section ${styles.section}`}
       style={{ backgroundColor: settings.props.bgColor }}
     >
-      {settings.props.customCSS && (
-        <style>{`
-          #email-collection${settings.id} {
-            ${settings.props.customCSS}
-          }
-        `}</style>
-      )}
+      <SectionStyles
+        sectionId={`email-collection${settings.id}`}
+        props={settings.props}
+      />
       <div className="container">
         <div className={settings.props.contentLayout}>
-          <div>
+          <div className="email-form__content">
             <div
               style={{ order: settings.props.order }}
               className={styles.htmlContent}
@@ -155,6 +153,19 @@ export default function EmailCollection(settings) {
                   />
                 </svg>
               </form>
+              <small>
+                By subscribing, you acknowledge and agree to PragerU’s{" "}
+                <a href="https://www.prageru.com/terms?ref=c4alp33xx0&sub_id=Author">
+                  Terms of Use{" "}
+                </a>
+                and{" "}
+                <a href="https://www.prageru.com/privacy?ref=c4alp33xx0&sub_id=Author">
+                  Privacy Policy{" "}
+                </a>
+                , and BRAVE Books'{" "}
+                <a href="https://bravebooks.us/policies/terms-of-service">Terms of Use</a> and{" "}
+                <a href="https://bravebooks.us/policies/privacy-policy">Privacy Policy</a>.
+              </small>
               <div className="email-form__email-error">
                 <p>Enter a valid email</p>
               </div>

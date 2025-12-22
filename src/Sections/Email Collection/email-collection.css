@@ -5,6 +5,18 @@
   box-shadow: var(--shadow);
 }
 
+.email-form__container small {
+  display: block;
+  max-width: 350px;
+  line-height: 18px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: white;
+}
+.email-form__container small a {
+  color: white;
+}
+
 .email-form__container[data-form-status="loading"] .email-form__spinner {
   display: block;
 }
@@ -92,6 +104,9 @@
   font-size: 14px;
 }
 @media screen and (max-width: 696px) {
+  .email-form__content {
+    order: 1;
+  }
   .email-form__container form,
   .email-form__claim {
     margin: 20px auto 0;
