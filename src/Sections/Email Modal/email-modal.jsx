@@ -27,7 +27,7 @@ export default function EmailCaptureModal(settings) {
     try {
       const res = await fetch(`${process.env.REACT_APP_BRAVE_BACKEND_URL}/klaviyo/subscribe`, {
         method: "POST",
-        headers: { "Content-Type": "application/vnd.api+json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: email, listId: settings.props.listId }),
       });
 
