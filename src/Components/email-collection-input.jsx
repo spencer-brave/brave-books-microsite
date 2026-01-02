@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "../Sections/Email Modal/email-modal.module.css";
+import { protectedFetch } from "../Utils/api";
 
 export default function EmailCollectionInput({ listId, id }) {
   const [email, setEmail] = useState("");
@@ -15,15 +16,11 @@ export default function EmailCollectionInput({ listId, id }) {
     setError("");
 
     try {
-      const res = await fetch(
-        `${process.env.REACT_APP_BRAVE_BACKEND_URL}/klaviyo/subscribe`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, listId }),
-        }
-      );
-      if (!res.ok) {
+      const res = await protectedFetch("/klaviyo/subscribe", {
+        method: "POST",
+        body: JSON.stringify({ email: email, listId: listId }),
+      });
+      if (res.error) {
         throw new Error("Failed to subscribe");
       }
 

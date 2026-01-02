@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./email-modal.module.css";
+import { protectedFetch } from "../../Utils/api";
 
 export default function EmailCaptureModal(settings) {
   const [open, setOpen] = useState(false);
@@ -25,19 +26,19 @@ export default function EmailCaptureModal(settings) {
     setError("");
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_BRAVE_BACKEND_URL}/klaviyo/subscribe`, {
+      const res = await protectedFetch("/klaviyo/subscribe", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: email, listId: settings.props.listId }),
       });
 
-      if (!res.ok) {
-        throw new Error("Failed to subscribe");
-      } else {
-        window.location.href =
-          "https://bravebooks.us/discount/M-WELCOME15?redirect=/products/brave-book-club&utm_source=microsite&utm_medium=headless&utm_campaign=new-ads-account";
+      if (res.error) {
+        throw new Error(res.error || "Failed to subscribe");
       }
-      setEmail("");
+
+      window.location.href =
+        "https://bravebooks.us/discount/M-WELCOME15?redirect=/products/brave-book-club&utm_source=microsite&utm_medium=headless&utm_campaign=new-ads-account";
+      
+        setEmail("");
     } catch (err) {
       setError("Something went wrong. Try again?");
       setLoading(false);
