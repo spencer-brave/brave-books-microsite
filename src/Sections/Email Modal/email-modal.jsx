@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "./email-modal.module.css";
-import { protectedFetch } from "../../Utils/api";
 
 export default function EmailCaptureModal(settings) {
   const [open, setOpen] = useState(false);
